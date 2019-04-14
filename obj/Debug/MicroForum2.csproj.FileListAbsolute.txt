@@ -89,3 +89,5 @@ C:\Users\André\Dropbox\VisualStudio\MicroForum\MicroForum2\bin\roslyn\vbc.exe.c
 C:\Users\André\Dropbox\VisualStudio\MicroForum\MicroForum2\bin\roslyn\vbc.rsp
 C:\Users\André\Dropbox\VisualStudio\MicroForum\MicroForum2\bin\roslyn\VBCSCompiler.exe
 C:\Users\André\Dropbox\VisualStudio\MicroForum\MicroForum2\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\André\source\repos\MicroForum\obj\Debug\MicroForum2.dll
+C:\Users\André\source\repos\MicroForum\obj\Debug\MicroForum2.pdb

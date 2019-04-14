@@ -8,7 +8,7 @@
 
 .coluna {
     border-left: 1px dotted red;
-    border-left: 1px dotted red;
+    border-right: 1px solid red;
 }
 
 .vazia5{
@@ -22,4 +22,9 @@
 ,logo1{
     height:50px;
 
+}
+
+.centro{
+
+    text-align:center;
 }

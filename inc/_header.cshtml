@@ -15,48 +15,51 @@
 
     <div class="container-fluid">
         <!--LOGO e LOGIN-->
+        
 
         <div>
             <div class="row logo">
                 <div class="col-md-10 coluna align-self-end logo1"> <h1>Aqui entra a logo</h1></div>
-                <div class="col-md-1 coluna align-self-center "> <a href="#">Registrar</a></div>
-                <div class="col-md-1 coluna align-self-center"> @{ if (!Request.IsAuthenticated)
-                                                                    {
-                                                                    //Verifica se está logado, o HTML de baixo só aparece em caso de negativo    
-                                                                         <a href="#">Entrar</a>
-                                                                    }else
-                                                                    {
-                                                                        //  Em caso de positivo - mostra o opção de sair
-                                                                        <a href="#">Sair</a>  
-                                                                    }
-                                                                     }
+                <div class="col-md-1 coluna align-self-center "> <a href="~/criarconta.cshtml">Registrar</a></div>
+                <div class="col-md-1 coluna align-self-center">
+                    @{ if (!Request.IsAuthenticated)
+                        {
+                            //Verifica se está logado, o HTML de baixo só aparece em caso de negativo
+                            <a href="#">Entrar</a>
+                        }
+                        else
+                        {
+                            //  Em caso de positivo - mostra o opção de sair
+                            <a href="#">Sair</a>
+                        }
+                    }
                 </div>
-                  
-        </div>
-        
-
-
-
-        <!--Essa é a primeira barra vazia no topo com as redes sociais-->
-        <div class="row align-items-center align-self-center">
-            <div class=" col-md-3 offset-md-9  coluna vazia5">
-                <p>REDES SOCIAS|</p>
 
             </div>
-        </div>
-        <!--Barra de menu-->
-        <div class="row align-items-center align-self-center">
-            <div class=" col-md-4 offset-md-8  coluna vazia5">
-                <p>Menu|Menu|Menu|Menu|Menu|</p>
 
+
+
+
+            <!--Essa é a primeira barra vazia no topo com as redes sociais-->
+            <div class="row align-items-center align-self-center">
+                <div class=" col-md-3 offset-md-9  coluna vazia5">
+                    <p>REDES SOCIAS|</p>
+
+                </div>
             </div>
+            <!--Barra de menu-->
+            <div class="row align-items-center align-self-center">
+                <div class=" col-md-4 offset-md-8  coluna vazia5">
+                    <p>Menu|Menu|Menu|Menu|Menu|</p>
+
+                </div>
+            </div>
+
+
+
         </div>
 
-
-
-    </div>
-
-    <hr />
+        <hr />
 
 
 
@@ -66,18 +69,18 @@
 
 
 
-    
 
 
 
 
-    
-       
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
