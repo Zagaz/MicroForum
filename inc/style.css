@@ -1,0 +1,25 @@
+﻿body {
+}
+
+.row {
+    border-top: 1px dotted blue;
+    border-bottom: 1px dotted blue;
+}
+
+.coluna {
+    border-left: 1px dotted red;
+    border-left: 1px dotted red;
+}
+
+.vazia5{
+
+    height:30px;
+}
+
+.logo {
+    height: 80px;
+}
+,logo1{
+    height:50px;
+
+}
