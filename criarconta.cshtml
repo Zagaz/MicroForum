@@ -26,21 +26,60 @@
                 @{
                     var apresentarFormulario = true;
 
+                    //Se foi feito um post (via botao - submit)
                     if (IsPost)
                     {
+                        //Validação para ver se os campos foram preenchidos
 
-                        //Formulário abrir conta
-                        <p>Success!</p>
+                        var user = Request["nPassword"];
+                        var password = Request["nPassword"];
+                        var passwordConfirm = Request["nConfirmPassword"];
+                        var mensagemErro = "";
+                        var avancar = true;
+                        
 
+                        if (user==""||password==""|| passwordConfirm=="")
+                        {
+                            //invalido - usuario nao preencheu todos os campos.
+                            mensagemErro = "Um ou mais campos não foram preenchidos";
+                            avancar = false;
+                            <p>@mensagemErro</p>
+
+                        }
+
+                        if (password!=password)
+                        {
+                            //As senhas não conferem
+                            avancar = false;
+                        }
+
+
+                        
+                        
+
+
+                        if (IsPost) { 
+                        //Essa é a etapa 2 - Após o botao foi tocado
+                        //Já não é necessário apresentar o formulário.
                         apresentarFormulario = false;
+                        //Formulário abrir conta
+                        //Mensagem
+                        <p>Success!</p>
+                        
+
+                        }
+
 
                     }
-
+                    //Enquanto o apresentarFormulário for true (Não ouve registro, é obrigado a se registrar )
                     if (apresentarFormulario)
 
                     {
-                        <h3>Create new account</h3>
 
+                        <p><strong style="color:red">  </strong></p>
+                        <p><strong style="color:red"> </strong></p>
+                        <h3>Create new account</h3>
+                        //Segue o formulário
                         <form method="post" action="">
                             <lable>User:</lable>
                             <input type="text" name="nUser" value="John Doe" size="30" maxlength="30" /> <br />
@@ -49,14 +88,15 @@
                             <input type="password" name="nPassword" value="******" size="30" maxlength="30" /><br />
 
                             <lable>Confirm password:</lable>
-                            <input type="password" name="nConfirmPassword" value="******" size="30" maxlength="30" /><br />
+                            <input type="password" name = "nConfirmPassword" value="******" size="30" maxlength="30" /><br />
 
                             <input type="submit" value="Create New" />
-
+                            <!--Clicando o botão, isPost() é acionado (Vide acima)  resentarFormulario = false e daí não se faz necessário o formulário não é mais apresentado-->
+                                    
                         </form>
                     }
 
-
+                    
                 }
 
             </div>
